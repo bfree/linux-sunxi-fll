@@ -1,0 +1,19 @@
+[base]
+flavours:
+ sunxi-sun4i
+kernel-arch: arm
+
+[image]
+suggests: fdutils
+
+[sunxi-sun4i_build]
+debug-info: false
+
+[sunxi-sun4i_description]
+hardware: Allwinner A10
+hardware-long: boards with Allwinner A10 processors
+
+[sunxi-sun4i_image]
+configs:
+ armhf/config
+recommends: uboot-mkimage
