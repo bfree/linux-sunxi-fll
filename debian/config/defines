@@ -4,6 +4,7 @@ abiname: 6.slh.1
 [base]
 arches:
  amd64
+ armhf
  i386
 compiler: gcc-4.6
 featuresets:
