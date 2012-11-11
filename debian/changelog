@@ -3,6 +3,7 @@ linux-sunxi (3.0-42) UNRELEASED; urgency=low
   [ Niall Walsh ]
   * rename to linux-sunxi
   * drop back to 3.0-42
+  * restore arm kernel building to rules.real
 
  -- Niall Walsh <niallwalsh@users.berlios.de>  Sun, 11 Nov 2012 13:57:27 +0000
 
