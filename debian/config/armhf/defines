@@ -15,5 +15,5 @@ hardware-long: boards with Allwinner A10 processors
 
 [sunxi-sun4i_image]
 configs:
- armhf/config
+ armhf/config.sun4i
 recommends: uboot-mkimage
