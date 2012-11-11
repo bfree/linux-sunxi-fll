@@ -1,9 +1,10 @@
-linux-aptosid (3.6-18) UNRELEASED; urgency=low
+linux-sunxi (3.0-42) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
-  * set ABI to 6.slh.1.
+  [ Niall Walsh ]
+  * rename to linux-sunxi
+  * drop back to 3.0-42
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 03 Nov 2012 21:32:14 +0100
+ -- Niall Walsh <niallwalsh@users.berlios.de>  Sun, 11 Nov 2012 13:57:27 +0000
 
 linux-aptosid (3.6-17) unstable; urgency=low
 
