@@ -11,9 +11,11 @@ also CROSS_COMPILE, CFLAGS_KERNEL and CFLAGS_MODULE.
 This file can only be read after we establish the build tree, and all
 use of $(ARCH) needs to be moved after this.
 
---- a/Makefile
-+++ b/Makefile
-@@ -195,42 +195,6 @@ export KBUILD_BUILDHOST := $(SUBARCH)
+Index: linux-sunxi-3.0.42/Makefile
+===================================================================
+--- linux-sunxi-3.0.42.orig/Makefile	2012-11-09 09:10:54.000000000 +0000
++++ linux-sunxi-3.0.42/Makefile	2012-11-12 11:42:35.739521115 +0000
+@@ -195,46 +195,6 @@
  ARCH		?= $(SUBARCH)
  CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
  
@@ -53,10 +55,14 @@ use of $(ARCH) needs to be moved after this.
 -# Where to locate arch specific headers
 -hdr-arch  := $(SRCARCH)
 -
+-ifeq ($(ARCH),m68knommu)
+-       hdr-arch  := m68k
+-endif
+-
  KCONFIG_CONFIG	?= .config
  export KCONFIG_CONFIG
  
-@@ -349,6 +313,40 @@ CFLAGS_KERNEL	=
+@@ -354,6 +314,40 @@
  AFLAGS_KERNEL	=
  CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
  
