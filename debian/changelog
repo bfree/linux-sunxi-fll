@@ -1,10 +1,18 @@
-linux-sunxi (3.0-42) UNRELEASED; urgency=low
+linux-sunxi (3.0-42) unstable; urgency=low
 
   [ Niall Walsh ]
   * rename to linux-sunxi
   * drop back to 3.0-42
   * restore arm kernel building to rules.real
   * drop all but 3 debian specific patches
+  * go back to gcc 4.6
+  * add armhf to config/defines
+  * reset abiname to 1.sunxi.1
+  * add config/armhf with config.sun4i and armhf/defines
+  * de-aptosid config and templates
+  * refresh patches, fixup kernelvariables.patch to match our older source
+  * wrap test around cp of include/generated/asm/*.h as we don't have them
+  * build using commit 09946bae6c414e62c066c57169100c62cd303500
 
  -- Niall Walsh <niallwalsh@users.berlios.de>  Sun, 11 Nov 2012 13:57:27 +0000
 
