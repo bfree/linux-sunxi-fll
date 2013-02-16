@@ -9,11 +9,11 @@ file having already been compressed and removed.
 Since dh_compress will compress manual pages later, we don't need
 to run gzip here at all.
 
-Index: linux-sunxi-3.0.42/Documentation/DocBook/Makefile
+Index: linux-sunxi-3.4/Documentation/DocBook/Makefile
 ===================================================================
---- linux-sunxi-3.0.42.orig/Documentation/DocBook/Makefile	2012-11-09 09:10:54.000000000 +0000
-+++ linux-sunxi-3.0.42/Documentation/DocBook/Makefile	2012-11-12 11:42:53.068527966 +0000
-@@ -170,7 +170,7 @@
+--- linux-sunxi-3.4.orig/Documentation/DocBook/Makefile	2013-02-16 13:52:47.006240396 +0000
++++ linux-sunxi-3.4/Documentation/DocBook/Makefile	2013-02-16 13:52:46.986240406 +0000
+@@ -159,7 +159,7 @@
              cp $(PNG-$(basename $(notdir $@))) $(patsubst %.html,%,$@); fi
  
  quiet_cmd_db2man = MAN     $@
