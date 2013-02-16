@@ -1,6 +1,8 @@
 linux-sunxi (3.4-1) UNRELEASED; urgency=low
 
   * move to 3.4
+  * set ABI to 29.sunxi.1
+  * back to gcc 4.7
 
  -- Niall Walsh <niallwalsh@users.berlios.de>  Sat, 16 Feb 2013 13:24:38 +0000
 
